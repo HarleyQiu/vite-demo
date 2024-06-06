@@ -1,12 +1,15 @@
 <script setup>
+import TopBar from "./components/TopBar.vue";
+import BottomBar from "./components/BottomBar.vue";
 </script>
 
 <template>
-  <div>
-    <h1>Vite - Vue - Demo</h1>
-    <p>
-      - This is a simple Vue 3 app created using Vite.
-    </p>
+  <div class="flex flex-col min-h-screen">
+    <top-bar></top-bar>
+    <main class="flex-grow bg-gray-100 p-4">
+      <h1 class="text-3xl text-center">Main Content</h1>
+    </main>
+    <bottom-bar></bottom-bar>
   </div>
 </template>
 

@@ -7,7 +7,7 @@ import BottomBar from "./components/BottomBar.vue";
   <div class="flex flex-col min-h-screen">
     <top-bar></top-bar>
     <main class="flex-grow bg-gray-100 p-4">
-      <h1 class="text-3xl text-center">Main Content</h1>
+      <router-view></router-view>
     </main>
     <bottom-bar></bottom-bar>
   </div>

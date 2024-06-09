@@ -1,5 +1,6 @@
 <script setup>
 import {useUserStore} from '../stores/userStore'
+import {SpeedInsights} from '@vercel/speed-insights/vue';
 
 const userStore = useUserStore()
 </script>
@@ -10,6 +11,7 @@ const userStore = useUserStore()
     <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
       <p class="text-center text-lg">当前用户名是：{{ userStore.name }}</p>
     </div>
+    <SpeedInsights/>
   </div>
 </template>
 

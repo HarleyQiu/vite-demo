@@ -6,6 +6,9 @@ const userStore = useUserStore()
 const newName = ref('')
 
 function updateName() {
+  if (!newName.value) {
+    return
+  }
   userStore.updateName(newName.value)
 }
 </script>

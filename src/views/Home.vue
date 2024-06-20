@@ -15,7 +15,7 @@ function updateName() {
 
 <template>
   <div class="flex flex-col items-center justify-center bg-gray-100">
-    <h1 class="text-3xl font-bold text-center text-blue-600 italic mb-4">首页</h1>
+    <h1 class="text-3xl font-bold text-center text-blue-600 mb-4">首页</h1>
     <div class="bg-white shadow-md rounded-lg p-6 w-full max-w-md">
       <p class="text-center text-lg mb-2">用户名：{{ userStore.name }}</p>
       <p class="text-center text-lg mb-4">年龄：{{ userStore.age }}</p>
